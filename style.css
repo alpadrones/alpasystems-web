@@ -11,7 +11,6 @@ img{ max-width:100%; display:block; border-radius:12px }
 a{ color:inherit; text-decoration:none }
 .container{ width:100%; max-width:var(--container); margin-inline:auto; padding: 0 20px }
 
-/* Nav */
 .site-header{ position: sticky; top:0; z-index:100; backdrop-filter: blur(6px); background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom: 1px solid var(--stroke) }
 .nav{ display:flex; align-items:center; justify-content:space-between; padding: 12px 0 }
 .brand{ display:flex; align-items:center; gap:12px }
@@ -19,7 +18,7 @@ a{ color:inherit; text-decoration:none }
 .brand-name{ font-weight:700; letter-spacing: .6px }
 .nav-links{ display:flex; gap:20px }
 .nav-links a{ padding: 8px 12px; border-radius: 10px; border:1px solid transparent }
-.nav-links a:hover{ border-color: var(--stroke); background: var(--bg-soft) }
+.nav-links a:hover, .nav-links a.active{ border-color: var(--stroke); background: var(--bg-soft) }
 
 .nav-right{ display:flex; align-items:center; gap:10px }
 .btn{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; border:1px solid var(--stroke); background: var(--bg-soft); transition: .2s transform ease, .2s background ease }
@@ -27,7 +26,6 @@ a{ color:inherit; text-decoration:none }
 .btn.primary{ background: linear-gradient(135deg, var(--brand), var(--brand-strong)); color:#0c0f0e; border-color: transparent; font-weight:700 }
 .btn.primary:hover{ filter: brightness(1.03) }
 
-/* Hero portada */
 .hero{ position:relative; overflow:clip; padding: 72px 0 40px; border-bottom: 1px solid var(--stroke) }
 .hero-grid{ display:grid; grid-template-columns: 1.3fr 1fr; gap:36px; align-items:center }
 .badge{ display:inline-block; padding:6px 10px; border:1px solid var(--stroke); border-radius: 999px; color: var(--txt-dim); font-size: 14px; background: color-mix(in oklab, var(--bg-soft), white 1%) }
@@ -50,7 +48,6 @@ a{ color:inherit; text-decoration:none }
 
 .gallery{ display:grid; grid-template-columns: repeat(3, 1fr); gap:12px }
 
-/* Páginas internas */
 .feature-block{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; padding: 16px; border:1px solid var(--stroke); border-radius:14px; background: var(--bg-soft) }
 .usecase-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:16px }
 .usecase-card{ background: var(--bg-soft); border:1px solid var(--stroke); padding: 12px; border-radius:14px }
@@ -59,12 +56,10 @@ a{ color:inherit; text-decoration:none }
 .grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap:12px }
 .contact-form textarea{ width:100% }
 
-/* Footer */
 footer{ border-top:1px solid var(--stroke); padding: 36px 0; color: var(--txt-dim) }
 .foot{ display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap }
 .foot-links{ display:flex; gap:16px }
 
-/* Responsive */
 @media (max-width: 980px){
   .hero-grid, .cards, .gallery, .feature-block, .usecase-grid, .grid-2{ grid-template-columns: 1fr }
   .nav-links{ display:none }

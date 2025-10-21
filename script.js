@@ -1,7 +1,4 @@
-// Año dinámico
 document.querySelectorAll('#year').forEach(el => el.textContent = new Date().getFullYear());
-
-// Formulario mailto
 const form = document.getElementById('contactForm');
 if(form){
   form.addEventListener('submit', (e) => {
