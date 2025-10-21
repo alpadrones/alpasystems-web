@@ -193,3 +193,31 @@ footer{ border-top:1px solid var(--stroke); padding: 36px 0; color: var(--txt-di
   background: var(--bg-soft);
   padding: 0 4px;
 }
+
+
+/* --- Forzar tema oscuro en <select> y su popup --- */
+.contact-form.modern .field.select select{
+  background-color: color-mix(in oklab, var(--bg-soft), white 2%);
+  color: var(--txt);
+  border-radius: 8px;
+  background-clip: padding-box;
+  color-scheme: dark; /* ayuda a que el menú desplegable respete el tema oscuro */
+}
+.contact-form.modern .field.select select:focus{
+  outline: none;
+}
+/* Estilo de las opciones (no todos los navegadores lo soportan, pero ayuda) */
+.contact-form.modern .field.select option{
+  background-color: var(--bg-soft);
+  color: var(--txt);
+}
+/* Quitar la flecha de IE/Edge antiguo */
+.contact-form.modern .field.select select::-ms-expand { display:none; }
+/* WebKit normaliza borde interior */
+.contact-form.modern .field.select select:-internal-autofill-selected {
+  background-color: var(--bg-soft) !important;
+  color: var(--txt) !important;
+}
+
+/* Tema oscuro general para formularios en iOS/Safari donde aplica */
+form, select, option, input, textarea { color-scheme: dark; }
