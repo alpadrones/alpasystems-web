@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+
+  
+<title>Contact — ALPA Systems</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121614" />
-  <meta name="description" content="Request a demo and share your mission requirements for a tailored technical proposal." />
-  <meta property="og:image" content="/assets/og-image.jpg" />
-  <title>Contact — ALPA Systems</title>
-  
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=3">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
-<link rel="shortcut icon" href="/favicon.ico?v=3">
-
-  <link rel="stylesheet" href="/style.css" />
-
+  <meta name="description" content="Solicita una demo y cuéntanos tus requisitos de misión para una propuesta técnica personalizada." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="/en/index.html" aria-label="ALPA Systems, home">
+      <a class="brand" href="index.html" aria-label="ALPA Systems, inicio">
         <div class="brand-logo" aria-hidden="true"><span>AP</span></div>
         <span class="brand-name">ALPA Systems</span>
       </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="/en/index.html">Home</a>
-        <a href="/en/technology.html">Technology</a>
-        <a href="/en/applications.html">Applications</a>
-        <a href="/en/contact.html" class="active">Contact</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="index.html">Home</a>
+        <a href="technology.html">Technology</a>
+        <a href="applications.html">Applications</a>
+        <a href="contact.html" class="active" class="active">Contact</a>
       </nav>
       <div class="nav-right">
         <a href="/" class="btn" aria-label="Cambiar a Español">ES</a>
-        <a href="/en/contact.html" class="btn primary">Request demo</a>
+        <a href="contact.html" class="btn primary">Request demo</a>
       </div>
     </div>
   </header>
+
   <main class="container contact-layout">
     <section class="contact-card">
       <header class="contact-head">
-        <h1>Tell us about your mission</h1>
-        <p>Share your use case, payloads and timeline. Our engineering team will reply with a proposal.</p>
+        <h1>Hablemos de tu misión</h1>
+        <p>Cuéntanos el escenario de uso, payloads y plazos. Nuestro equipo de ingeniería te responderá con una propuesta técnica.</p>
       </header>
 
       <form id="contactForm" class="contact-form modern" novalidate>
         <div class="grid-2">
           <div class="field">
-            <input type="text" name="nombre" id="name" placeholder=" " required autocomplete="name" />
-            <label for="name">Name</label>
+            <input type="text" name="nombre" id="nombre" placeholder=" " required autocomplete="name" />
+            <label for="nombre">Nombre</label>
           </div>
           <div class="field">
             <input type="email" name="email" id="email" placeholder=" " required autocomplete="email" />
@@ -56,24 +57,24 @@
 
         <div class="grid-2">
           <div class="field">
-            <input type="text" name="organizacion" id="organization" placeholder=" " />
-            <label for="organization">Organization</label>
+            <input type="text" name="organizacion" id="organizacion" placeholder=" " />
+            <label for="organizacion">Organization</label>
           </div>
           <div class="field select">
-            <select name="uso" id="use">
-              <option value="Defense">Defense</option>
-              <option value="Public safety">Public safety</option>
-              <option value="Critical infrastructure">Critical infrastructure</option>
-              <option value="Events">Events</option>
-              <option value="Other">Other</option>
+            <select name="uso" id="uso">
+              <option value="Defensa">Defensa</option>
+              <option value="Seguridad pública">Seguridad pública</option>
+              <option value="Infraestructura crítica">Infraestructura crítica</option>
+              <option value="Eventos">Eventos</option>
+              <option value="Otro">Otro</option>
             </select>
-            <label for="use">Primary use</label>
+            <label for="uso">Primary use</label>
           </div>
         </div>
 
         <div class="field textarea">
-          <textarea name="mensaje" id="message" rows="6" placeholder=" " required></textarea>
-          <label for="message">Mission requirements, payloads, environment…</label>
+          <textarea name="mensaje" id="mensaje" rows="6" placeholder=" " required></textarea>
+          <label for="mensaje">Requisitos de misión, payloads, entorno…</label>
         </div>
 
         <div class="form-actions">
@@ -85,20 +86,22 @@
 
     <aside class="contact-side">
       <div class="info-card">
-        <h3>Direct contact</h3>
+        <h3>Contact directo</h3>
         <ul>
-          <li><b>Email:</b> contact@alpasystems.com</li>
-          <li><b>Phone:</b> +34 600 000 000</li>
-          <li><b>Hours:</b> 09:00–18:00 CET</li>
+          <li><b>Email:</b> contacto@alpasystems.com</li>
+          <li><b>Teléfono:</b> +34 600 000 000</li>
+          <li><b>Horario:</b> 09:00–18:00 CET</li>
         </ul>
       </div>
+
       <div class="info-card map-card">
-        <h3>Location</h3>
-        <img src="/assets/map_placeholder.jpg" alt="Map — sample location" />
-        <p class="muted">Madrid (HQ)</p>
+        <h3>Ubicación</h3>
+        <img src="../assets/map_placeholder.jpg" alt="Mapa — ubicación de ejemplo" />
+        <p class="muted">Madrid (oficina principal)</p>
       </div>
     </aside>
   </main>
+
   <footer>
     <div class="container foot">
       <div>© <span id="year"></span> ALPA Systems — Todos los derechos reservados</div>
@@ -109,7 +112,6 @@
       </div>
     </div>
   </footer>
-  <script src="/script.js"></script>
-
+  <script src="../script.js"></script>
 </body>
 </html>
