@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="olive">
+<html lang="es">
 <head>
   <title>Contacto — ALPA Systems</title>
-  <meta name="description" content="Pide una demo personalizada. Cuéntanos tus requisitos de misión y payloads necesarios." />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121614" />
+  <meta name="description" content="ALPA Systems desarrolla soluciones de vigilancia y comunicaciones tácticas con drones tethered para defensa, seguridad y protección de infraestructuras críticas." />
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <meta property="og:image" content="assets/og-image.jpg" />
   <link rel="stylesheet" href="style.css" />
 
 </head>
@@ -23,7 +24,7 @@
         <a href="contacto.html">Contacto</a>
       </nav>
       <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+        <a href="contacto.html" class="btn primary">Solicitar demo</a>
       </div>
     </div>
   </header>
@@ -33,26 +34,46 @@
     <p class="section-sub">Cuéntanos el uso y requisitos de misión; te proponemos una demo personalizada.</p>
     <form id="contactForm" novalidate class="contact-form">
       <div class="grid-2">
-        <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
-        <input type="email" name="email" placeholder="Tu correo" autocomplete="email" required />
+        <div>
+          <label>Nombre</label>
+          <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required />
+        </div>
       </div>
       <div class="grid-2">
-        <input type="text" name="organizacion" placeholder="Organización" />
-        <select name="uso">
-          <option>Defensa</option>
-          <option>Seguridad pública</option>
-          <option>Infraestructura crítica</option>
-          <option>Eventos</option>
-          <option>Otro</option>
-        </select>
+        <div>
+          <label>Organización</label>
+          <input type="text" name="organizacion" placeholder="Organismo o empresa" />
+        </div>
+        <div>
+          <label>Uso principal</label>
+          <select name="uso">
+            <option>Defensa</option>
+            <option>Seguridad pública</option>
+            <option>Infraestructura crítica</option>
+            <option>Eventos</option>
+            <option>Otro</option>
+          </select>
+        </div>
       </div>
+      <label>Mensaje</label>
       <textarea name="mensaje" rows="6" placeholder="Requisitos de misión, payloads, tiempos, entorno, etc." required></textarea>
       <button class="btn primary" type="submit">Enviar</button>
       <span id="formMsg" aria-live="polite"></span>
     </form>
   </main>
   <footer>
-    <div class="container">© <span id="year"></span> ALPA Systems</div>
+    <div class="container foot">
+      <div>© <span id="year"></span> ALPA Systems — Todos los derechos reservados</div>
+      <div class="foot-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 
