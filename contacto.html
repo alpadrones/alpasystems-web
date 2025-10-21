@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="olive">
+<head>
+  <title>Contacto — ALPA Systems</title>
+  <meta name="description" content="Pide una demo personalizada. Cuéntanos tus requisitos de misión y payloads necesarios." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#121614" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="ALPA Systems, inicio">
+        <div class="brand-logo" aria-hidden="true"><span>AP</span></div>
+        <span class="brand-name">ALPA Systems</span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="tecnologia.html">Tecnología</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Contacto</h1>
+    <p class="section-sub">Cuéntanos el uso y requisitos de misión; te proponemos una demo personalizada.</p>
+    <form id="contactForm" novalidate class="contact-form">
+      <div class="grid-2">
+        <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+        <input type="email" name="email" placeholder="Tu correo" autocomplete="email" required />
+      </div>
+      <div class="grid-2">
+        <input type="text" name="organizacion" placeholder="Organización" />
+        <select name="uso">
+          <option>Defensa</option>
+          <option>Seguridad pública</option>
+          <option>Infraestructura crítica</option>
+          <option>Eventos</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <textarea name="mensaje" rows="6" placeholder="Requisitos de misión, payloads, tiempos, entorno, etc." required></textarea>
+      <button class="btn primary" type="submit">Enviar</button>
+      <span id="formMsg" aria-live="polite"></span>
+    </form>
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> ALPA Systems</div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
