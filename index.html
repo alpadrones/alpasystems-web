@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="olive">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALPA Systems — Sistemas de drones tethered</title>
+  <meta name="description" content="ALPA Systems desarrolla soluciones de vigilancia y comunicaciones tácticas con drones tethered para defensa y seguridad." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">
+        <div class="brand-logo"><span>AP</span></div>
+        <span class="brand-name">ALPA Systems</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#casos">Aplicaciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-right">
+        <button id="themeToggle" class="btn">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>ALPA Systems</h1>
+        <p>Sistemas tethered para vigilancia y defensa.</p>
+        <a href="#contacto" class="btn primary">Contactar</a>
+      </div>
+    </section>
+
+    <section id="tecnologia" class="container">
+      <h2>Tecnología</h2>
+      <p>Arquitectura modular con estación de tierra, tether híbrido y dron cautivo.</p>
+    </section>
+
+    <section id="casos" class="container">
+      <h2>Aplicaciones</h2>
+      <p>Defensa, seguridad pública, y vigilancia de infraestructuras críticas.</p>
+    </section>
+
+    <section id="contacto" class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn primary">Enviar</button>
+        <span id="formMsg"></span>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> ALPA Systems</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
